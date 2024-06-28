@@ -13,7 +13,7 @@ bot = telebot.TeleBot('6998649359:AAGV1CBJ5Yp27OXaOpVF-IzpyiqI3YbGG2E')
 owner_id = "2003075069"
 
 # Admin user IDs
-admin_ids = ["6024872629"]
+admin_ids = ["2003075069"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -408,8 +408,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-Buy From :- @THE_YAMRAJ
-Official Channel :- @THE_YAMRAJ
+Buy From :- @Omegarazz
+Official Channel :- @Omegarazz
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -428,7 +428,7 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
-3. MAKE SURE YOU JOINED @THE_YAMRAJ OTHERWISE NOT WORK
+3. MAKE SURE YOU JOINED @Omegarazz OTHERWISE NOT WORK
 4. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
     bot.reply_to(message, response)
 
@@ -446,7 +446,7 @@ Pr-ice List💸 :
 Day-->150 Rs
 Week-->750 Rs
 Month-->1600 Rs
-Dm @THE_YAMRAJ TO BUY
+Dm @Omegarazz TO BUY
 '''
     bot.reply_to(message, response)
 
@@ -494,12 +494,12 @@ def send_welcome(message):
     btn2 = telebot.types.KeyboardButton('💼ResellerShip')
     btn3 = telebot.types.KeyboardButton('ℹ️ My Info')
     markup.add(btn1, btn2, btn3)
-    bot.send_message(message.chat.id, "Welcome To YAMRAJ || VIP Please choose an option:", reply_markup=markup)
+    bot.send_message(message.chat.id, "Welcome To SYNCRAZZ || VIP Please choose an option:", reply_markup=markup)
 
 # Function to handle ResellerShip button
 @bot.message_handler(func=lambda message: message.text == '💼 ResellerShip')
 def handle_resellership(message):
-    bot.reply_to(message, "Contact @THE_YAMRAJ  for reseller ship.")
+    bot.reply_to(message, "Contact @Omegarazz  for reseller ship.")
 
 # Function to handle My Info button
 @bot.message_handler(func=lambda message: message.text == 'ℹ️ My Info')
